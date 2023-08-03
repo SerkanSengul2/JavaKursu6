@@ -1,0 +1,27 @@
+package Gun34._03_Soru;
+
+
+import Gun34._02_Soru.OgrTip;
+
+public class LiseOgrencisi extends Ogrenci {
+        private String brans;
+
+        private static int liseSayacID=1;
+        public LiseOgrencisi(String isim, String brans) {
+            super(isim, OgrTip.LISE, liseSayacID++);
+            setBrans(brans);
+        }
+
+        public String getBrans() {
+            return brans;
+        }
+
+        public void setBrans(String brans) {
+            this.brans = brans;
+        }
+
+        @Override
+        public String toString() {
+            return super.toString()+", branş="+this.brans;
+        }
+}

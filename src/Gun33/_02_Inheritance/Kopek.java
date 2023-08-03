@@ -1,0 +1,15 @@
+package Gun33._02_Inheritance;
+
+public class Kopek extends Hayvan {
+
+    public Kopek(String renk, int kilo, String cinsi) {
+        super(renk, kilo, cinsi);
+
+    }
+
+    @Override
+    public void Konustu() {
+        //super.Konustu();
+        System.out.println("havladı");
+    }
+}
